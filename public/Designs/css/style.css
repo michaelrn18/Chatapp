@@ -1,0 +1,252 @@
+/* Mobiel */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:helvetica;
+}
+body{
+    background-color: #292929;
+  
+  
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 109px;
+    background-color:#1F1F1F ; 
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    
+}
+header h1{
+    display: flex;
+    color:white;
+    text-align: center;
+    justify-content: center;
+
+}
+
+header p{
+    color:white;
+}
+
+form{
+    background-color:#3C3C3C ;
+    max-width: 375px;
+    width: 100%;
+    height: 49px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    border-radius: 30px;
+    margin-top: 50px;
+    padding-left: 30px;
+}
+form button{
+    border:none;
+    background-color: #007EF4;
+    width: 100%;
+    max-width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 3;
+  }
+
+form input{
+    max-width: 375px;
+    width: 100%;
+    background-color:#3C3C3C ;
+    height: 49px;
+    outline: 0;
+    border: 0;
+    border-radius: 30px;
+    color: white;
+}
+
+main{
+    max-width:268px;
+    width: 100%;
+    color: #606060;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 107px;
+    background-color:#1F1F1F ; 
+    justify-content: center;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45PX;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+}
+.rooms-list ul {
+    list-style-type: none;
+}
+
+
+
+
+.w-375 {
+    max-width: 375px;
+    width: 100%;
+}   
+/* 'primary': '#292929',
+'secondary': '#1F1F1F',
+'input': '#3C3C3C',
+'custom-blue': '#007EF4',
+'input-passive': '#CCCCCC', */
+
+
+/* begin roomlist */
+.rooms-container {
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+.rooms-list {
+    display: block;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.room-item {
+    margin: 2px;
+    position: relative;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.room-item:hover {
+    cursor: pointer;
+    background-color: #1F1F1F;
+    transition: .5s;
+}
+
+.room-name {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+}
+
+.room-users {
+    position: absolute;
+    bottom: 23px;
+    right: 15px;
+}
+.last-massage{
+    display: block;
+    text-align: left;
+    font-size: 15px;   
+    color: #5F5F5F;
+
+}
+
+.users {
+    color: white;
+    line-height:200%;
+    list-style-type: none;
+    
+}
+.chat-container {
+    display: none;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;  
+    
+  }
+.message{
+    position: relative;
+    display: block;
+    background-color: #454545;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px;
+    color: white;
+    width: 264px;
+    height: 87px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.message::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: #0fdc66;
+    border-radius: 100%;
+    margin-left: -1em;
+    margin-right: 12px;
+}
+
+.self{
+    background-color: #007EF4;
+    justify-content: end;
+    margin-left: auto;
+}
+.time{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+.message-area{
+display: flex;
+align-items: center;
+font-size: 12px;
+padding-top: 10px;
+}
+.name::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: #0fdc66;
+    border-radius: 100%;
+    margin-left: -1em;
+    margin-right: 12px;
+}
+.orange::before{
+    background-color: orange;
+}
+
+.red::before{
+    background-color: red;
+}
+
+.textmsg{
+    margin: 0px;
+}
+.fadein{
+   
+    display: none;
+    display: block;
+    color: white;
+}
+.fadeout{
+    display: none;
+}

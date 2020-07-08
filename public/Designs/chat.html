@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>chat</title>
+</head>
+<body>
+    <header>
+       
+    <div class="fadeout">
+<h2>Chatrooms</h2>
+<p>get a room nickname</p>
+    </div>
+    <div class="fadein">
+        <h2>sports</h2>
+        <p>#nickname</p>
+    </div>
+        <section class="navigation">
+            <div class="nav-container">
+            
+              <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                  <li>
+                    <a href="#!" class="rooms">Rooms</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="users">Users</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="quit">Quit</a>
+                    
+                
+                </ul>
+              </nav>
+            </div>
+          </section>
+    </header>
+    <section class="rooms-container" id="rooms-container">
+        <div>
+            <ul class="rooms-list w-375" id="rooms-list">
+                <li id="Socket.io" class="room-item" role="button">
+                    <span class="room-name">Socket.io</span>
+                    <span class="room-users">0 <i class="fa fa-users"></i></span>
+                    <span class="last-massage">Don’t worry, be chatty</span>
+                </li>
+                <li id="Socket.io" class="room-item" role="button">
+                    <span class="room-name">room</span>
+                    <span class="room-users">0 <i class="fa fa-users"></i></span>
+                    <span class="last-massage">Don’t worry, be chatty</span>
+                </li>
+                <li id="Socket.io" class="room-item" role="button">
+                    <span class="room-name">room</span>
+                    <span class="room-users">0 <i class="fa fa-users"></i></span>
+                    <span class="last-massage">Don’t worry, be chatty</span>
+                </li>
+                <li id="Socket.io" class="room-item" role="button" >
+                    <span class="room-name">room</span>
+                    <span class="room-users">2 <i class="fa fa-users"></i></span>
+                    <span class="last-massage">Don’t worry, be chatty</span>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="chat-container">
+        <section class="chat">
+            <ul class="chat-list" id="messages">
+          
+            </ul>
+        </section>
+    </section>
+
+
+    <footer>
+        <form class="textmsg" action="">
+            <input type="text" placeholder="Type your message" id="m">
+            <button type="submit">
+                <i class="fas fa-share-square  fa-inverse  fa-lg" ></i>
+            </button>
+            
+        </form>
+    </footer>
+    <!-- <script>
+        let username = localStorage.getItem('userName');
+        document.getElementById('nickname').innerHTML = `#${username}`;
+    </script> -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
