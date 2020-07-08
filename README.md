@@ -1,2 +1,3 @@
-# gluchat
-https://chatapppppppp.herokuapp.com/
+Installation:
+
+`npm install`
