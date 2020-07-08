@@ -1,3 +1,2 @@
 Installation:
-
-`npm install`
+geef maar op werk niet
